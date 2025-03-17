@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Банк - Управління Клієнтами та Акаунтами</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .header {
+            background: green;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+        }
+        .buttons {
+            margin: 20px 0;
+        }
+        .buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Банк - Управління Клієнтами та Акаунтами</div>
+        
+        <div class="buttons">
+            <a href="add_client.html">Додати Клієнта</a>
+            <a href="update_client.html">Оновити Клієнта</a>
+            <a href="add_account.html">Додати Акаунт</a>
+            <a href="update_account.html">Оновити Акаунт</a>
+        </div>
+        
+        <h2>Список Клієнтів</h2>
+        <table>
+            <tr>
+				<th>Id</th>
+                <th>Прізвище</th>
+                <th>Ім'я</th>
+                <th>По батькові</th>
+            </tr>
+            <tr>
+				<td>1</td>
+                <td>Іванов</td>
+                <td>Іван</td>
+                <td>Іванович</td>
+            </tr>
+            <tr>
+				<td>2</td>
+                <td>Петренко</td>
+                <td>Петро</td>
+                <td>Петрович</td>
+            </tr>
+        </table>
+        
+        <h2>Список Акаунтів</h2>
+        <table>
+            <tr>
+				<th>Аккаунт айді</th>
+                <th>Сума депозиту</th>
+                <th>Термін депозиту (місяці)</th>
+                <th>Час здійснення депозиту</th>
+                <th>Процентна ставка</th>
+                <th>Номер клієнта</th>
+            </tr>
+            <tr>
+				<td>1</td>
+                <td>10000</td>
+                <td>5</td>
+                <td>2025-03-01</td>
+                <td>6%</td>
+                <td>101</td>
+            </tr>
+            <tr>
+				<td>2</td>
+                <td>94321</td>
+                <td>24</td>
+                <td>2025-01-15</td>
+                <td>3%</td>
+                <td>102</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
